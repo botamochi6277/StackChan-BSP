@@ -1,8 +1,21 @@
-# StackChan
+# StackChan-BSP
+
+*StackChan-BSP* is StackChan board support package for Arduino development.
+
+It builds on [M5Unified](https://github.com/m5stack/M5Unified) and provides a single `M5StackChan.h` entry point with drivers for the StackChan body hardware:
+
+- **Servos**: feedback servo control for the horizontal (continuous rotation) and vertical axes
+- **RGB LEDs**: the 12 LEDs on the robot body
+- **Touch sensor**: the three-zone touch panel (Si12T), with configurable sensitivity
+- **Infrared**: IR transmit and receive
+- **NFC**: tag detection and emulation
+- **INA226**: power monitoring
+
+Ready-to-run sketches for each feature are in the [examples](examples) folder.
 
 ## Overview
 
-### SKU:K151
+### StackChan/SKU:K151
 
 **StackChan is a super kawaii AI desktop robot co-created by M5Stack and the user community.** It uses the M5Stack **flagship IoT development kit [CoreS3](https://docs.m5stack.com/en/core/CoreS3)** as its main controller, powered by an ESP32-S3 SoC featuring a 240 MHz dual-core processor, with 16MB Flash and 8MB PSRAM onboard, and supporting Wi-Fi and BLE. The main unit also integrates a 2.0-inch capacitive touch display with a high-strength glass cover, a 0.3 MP camera, a proximity & ambient light sensor, a 9-axis IMU (accelerometer + gyroscope + magnetometer), a microSD card slot, a 1W speaker, dual microphones, and power/reset buttons.
 
@@ -14,14 +27,14 @@ Thank you to the contributors of the StackChan community, especially:
 
 | ![](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/avatar_stack_chan.jpg) | ![](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/avatar_takao.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [@stack_chan](https://x.com/stack_chan)                      | [@mongonta555](https://x.com/mongonta555)                    |
-| Shinya Ishikawa                                              | Takao Akaki                                                  |
+| [@stack_chan](https://x.com/stack_chan) | [@mongonta555](https://x.com/mongonta555) |
+| Shinya Ishikawa | Takao Akaki |
 
 ## Related Link
 
 - [Document & Datasheet](https://docs.m5stack.com/en/StackChan)
 
-## Required Libraries:
+## Required Libraries
 
 - [M5Unified](https://github.com/m5stack/M5Unified)
 - [IRremoteESP8266](https://github.com/crankyoldgit/irremoteesp8266)
@@ -30,4 +43,3 @@ Thank you to the contributors of the StackChan community, especially:
 ## License
 
 - [StackChan- MIT](LICENSE)
-
