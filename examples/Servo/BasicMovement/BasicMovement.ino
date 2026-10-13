@@ -2,7 +2,16 @@
  * SPDX-FileCopyrightText: 2026 M5Stack Technology CO LTD
  *
  * SPDX-License-Identifier: MIT
+ *
+ * Basic servo movement demo for StackChan.
+ * Touch the top of the head to run a sequence that shows:
+ *   - goHome(): return to the home position
+ *   - moveX() / moveY(): move a single axis to an angle at a given speed
+ *   - move(): move both axes at once
+ *   - rotateX(): continuous 360-degree rotation of the X axis (Y axis does not support it)
+ * Progress is printed on the display.
  */
+
 #include <Arduino.h>
 #include <M5StackChan.h>
 
